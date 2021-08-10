@@ -19,7 +19,7 @@ public class CalculaMedia {
 		System.out.println("Agora digite a segunda nota: ");
 		notaDois = entrada.nextDouble();
 
-		// Logica para calcular a media
+		// Logica para calcular a média
 		media = (notaUm + notaDois) / 2;
 
 		// Testar se o usuario foi aprovado ou reprovado
