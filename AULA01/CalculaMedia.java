@@ -1,12 +1,12 @@
 package fundamentos;
 
-import java.util.Locale;
+//import java.util.Locale;
 import java.util.Scanner;
 
 public class CalculaMedia {
 	public static void main(String[] args) {
-		//Locale.setDefault(new Locale("en", "US");
-		
+		// Locale.setDefault(new Locale("en", "US");
+
 		// Declaracao de variaveis
 		double notaUm = 0.0, notaDois = 0.0, media = 0.0;
 		Scanner entrada = new Scanner(System.in);
