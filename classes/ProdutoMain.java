@@ -20,12 +20,23 @@ public class ProdutoMain {
 		produto3.preco = 700;
 		produto3.desconto = 0.90;
 		
+		double precoFinal1 = produto1.precoComDesconto();
+		double precoFinal2 = produto2.precoComDesconto();
+
+
+		//quando utiliza-se o printf o % é um lugar para trocar po um atributo
+		//$s é trocado por uma String
+		//%.2f é trocado por um numero de ponto flutuante (floate ou double) com 2 casas decimais
+		System.out.printf("O preço final do %s é R$%.2f \n", produto1.nome, precoFinal1);
+		System.out.printf("O preço final do %s é R$%.2f \n", produto2.nome, precoFinal2);
 		
 		
 		
+		/*
 		System.out.println(produto1.precoComDesconto());
 		System.out.println(produto2.precoComDesconto());
 		System.out.println(produto3.precoComDesconto());
+		*/
 		
 		/*
 		
