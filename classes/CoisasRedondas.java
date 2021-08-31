@@ -17,7 +17,9 @@ public class CoisasRedondas {
 	}
 	
 	double areaCirculo() {
-		return pi * Math.pow(raio, 2);
+		//return pi * (raio * raio);
+		//Utilizados um atributo e um método estático da classe Math
+		return Math.PI * Math.pow(raio, 2);
 	}
 	
 	double volumeEsfera() {

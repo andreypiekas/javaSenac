@@ -10,7 +10,7 @@ public class CoisasRedondasMain {
 		System.out.printf("O rabido tem o comprimento: %.2f \n", rabico.perimetroCircuferencia());
 		
 		System.out.println("A pizza tem área: " + pizza.areaCirculo());
-		System.out.printf("A pizza tem áreaA pizza tem a área: %.2f \n", pizza.areaCirculo());
+		System.out.printf("A pizza tem área pizza tem a área: %.2f \n", pizza.areaCirculo());
 		
 		System.out.println("A pizza tem área: " + bola.volumeEsfera());
 		System.out.printf("A pizza tem áreaA pizza tem a área: %.2f \n", bola.volumeEsfera());
