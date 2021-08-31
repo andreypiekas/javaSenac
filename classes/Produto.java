@@ -7,13 +7,13 @@ public class Produto {
 	
 	
 	//Construtor Padrao - nao tem retorno e nem argumentos
-	///argumento é o que vai dentro do parenteses
+	//argumento é o que vai dentro do parenteses
 	//retorno é o que vai na frente do metodo
-	/*
+	
 	Produto(){
 		
 	}
-	*/
+	
 	
 	//Construtor definido pelo dev
 	Produto(String nomeInserido, double precoInserido, double descontoInserido){
