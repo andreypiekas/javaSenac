@@ -1,13 +1,14 @@
 package classes;
 
 public class Produto {
+	//Atributos
 	String nome;
 	double preco;
 	double desconto;
 	
 	
 	//Construtor Padrao - nao tem retorno e nem argumentos
-	//argumento é o que vai dentro do parenteses
+	///argumento é o que vai dentro do parenteses
 	//retorno é o que vai na frente do metodo
 	
 	Produto(){
@@ -16,7 +17,10 @@ public class Produto {
 	
 	
 	//Construtor definido pelo dev
-	Produto(String nomeInserido, double precoInserido, double descontoInserido){
+	//Argumentos são salvos dentro dos atributos da classe
+	Produto(String nomeInserido, 
+			double precoInserido, 
+			double descontoInserido){
 		nome = nomeInserido;
 		preco = precoInserido;
 		desconto = descontoInserido;
@@ -35,9 +39,13 @@ public class Produto {
 	double precoComDesconto() {
 		return preco * desconto;
 	}
+	
+	double precoComDesconto(double descontoDoGerente) {
+		return preco * (desconto - descontoDoGerente);
+	}
 	//metodo com mesmo nome mas com assinatura diferente
 	//asstinatura é o conjunto de nome de metodo e quantidade de argumentos
-	double precoComDesconto(double precoInserido, double descontoInserido) {
+	static double precoComDesconto(double precoInserido, double descontoInserido) {
 		return precoInserido * descontoInserido;
 		
 	}
