@@ -20,6 +20,13 @@ public class Pessoa {
 	
 	}
 	
+	void comerDuranteSemana(Comida comida) {
+		for (int i = 0; i< 7; i++) {
+			peso += comida.peso;
+		}
+		
+	}
+	
 
 
 	
