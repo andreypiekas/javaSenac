@@ -2,14 +2,16 @@ package fundamentos;
 
 import java.util.Scanner;
 
-public class Trabalho01PossivelSolucao {
-public static void main(String[] args) {
-	
+public class Trabalho01comTryECatch {
+	public static void main(String[] args) {
+		
 		double numero = 0;
 		int contadorNota = 0;
 		double somaTotal = 0.0;
 		double media = 0.0;
-		String texto = "";
+		String textoInserido = "";
+		//flag ou bandeira
+		boolean textoInseridoEstaErrado = false;
 		
 
 		Scanner entrada = new Scanner(System.in);
@@ -18,23 +20,27 @@ public static void main(String[] args) {
 		///loop infinito proposital
 		while(true) {
 			System.out.println("Digite a nota " + (contadorNota + 1) + " ou digite SAIR:");
-			texto = entrada.next();
+			textoInserido = entrada.next();
 			
-			if(texto.equalsIgnoreCase("sair")) {
+			if(textoInserido.equalsIgnoreCase("sair")) {
 				break;
 			} else {
-			
-				numero = Double.parseDouble(texto.replace(',', '.'));
 				
-				if(numero >= 0 && numero <= 10) {
+				try {
+					numero = Double.parseDouble(textoInserido.replace(',', '.'));
+				}catch(NumberFormatException e) {
+					//levantei a bandeira do erro
+					textoInseridoEstaErrado = true;			
+				}
+				if(numero >= 0 && numero <= 10 && textoInseridoEstaErrado == false) {
 					somaTotal += numero;
 					contadorNota++; 
 				}else { 
 					System.out.println("Nota inválida.");
+			
 				}
-				
+				textoInseridoEstaErrado = false;
 			}
-
 		}
 		
 
@@ -48,6 +54,5 @@ public static void main(String[] args) {
 		
 		entrada.close();
 	}
+
 }
-
-
