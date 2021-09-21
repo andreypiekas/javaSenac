@@ -14,7 +14,12 @@ public class Sistema {
 		
 	
 		System.out.println("R$ "+conta1.getSaldo());
-		System.out.println(cliente1.getNome() + cliente1.getSobrenome());
+		System.out.println(cliente1.getNomeESobrenome());
+		
+		Funcionario funcionario1 = new Funcionario("Maria", "Rocha", 12345678998L, 1000);
+		
+		System.out.printf("Salario de %s é de R$ %.2f \n", funcionario1.getNomeESobrenome(), funcionario1.getSalario());
+		
 		
 	}
 

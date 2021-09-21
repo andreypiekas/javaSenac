@@ -2,6 +2,8 @@ package banco;
 
 public class Conta {
 	//Atributos
+	//Conta tem um objeto da classe cliente
+	//Isso é composição
 	private Cliente titular;
 	private int conta;
 	private int agencia;
@@ -22,10 +24,10 @@ public class Conta {
 	void depositar(double valor) {
 		if(valor > 0) {
 			saldo += valor;
-			System.out.println("Operação realizada com sucesso!");
+			System.out.println("Deposito - Operação realizada com sucesso!");
 		}
 		else {
-			System.out.println("Valor não permitido para deposito!");
+			System.out.println("Deposito - Valor não permitido para deposito!");
 			
 		}
 
@@ -35,14 +37,14 @@ public class Conta {
 		if(valor > 0) {
 			if (valor <= saldo + limite) {
 				saldo -= valor;
-				System.out.println("Operação realizada com sucesso!");
+				System.out.println("Saque - Operação realizada com sucesso!");
 			}
 			else {
-				System.out.println("Saldo insuficiente para saque!");
+				System.out.println("Saque - Saldo insuficiente para saque!");
 			}
 		}
 		else {
-			System.out.println("Valor nao permitido para saque!");
+			System.out.println("Saque - Valor nao permitido para saque!");
 			
 			
 		}
