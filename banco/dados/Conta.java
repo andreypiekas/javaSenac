@@ -24,7 +24,7 @@ public class Conta {
 	}
 	
 	//Metodos
-	void depositar(double valor) {
+	protected void depositar(double valor) {
 		if(valor > 0) {
 			saldo += valor;
 			System.out.println("Deposito - Operação realizada com sucesso!");
@@ -35,7 +35,7 @@ public class Conta {
 
 	}
 	
-	void sacar(double valor) {
+	protected void sacar(double valor) {
 		if(valor > 0) {
 			if (valor <= saldo + limite) {
 				saldo -= valor;
